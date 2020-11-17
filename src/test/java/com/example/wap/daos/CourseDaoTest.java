@@ -1,18 +1,18 @@
 package com.example.wap.daos;
 
-import com.example.wap.models.Course;
+import com.example.wap.models.Movie;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 class CourseDaoTest {
     @Autowired
-    CourseDao dao;
+    MovieDao dao;
 
     @Test
     void findAllCourses() {
-        Iterable<Course> courses = dao.findAllCourses();
-        for(Course course: courses) {
-            System.out.println(course);
+        Iterable<Movie> movies = dao.findAllMovies();
+        for(Movie movie: movies) {
+            System.out.println(movies);
         }
     }
 

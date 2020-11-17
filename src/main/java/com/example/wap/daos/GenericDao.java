@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 public class GenericDao {
     final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     String host = "localhost:3306";
-    String schema = "YOUR_SCHEMA";
+    String schema = "database_design_orm";
     final static String CONFIG = "serverTimezone=UTC";
     String dbUrl = "jdbc:mysql://"+ host +"/"+ schema +"?"+CONFIG;
 
-    String username = "a3";
-    String password = "a3";
+    String username = "dbDesign";
+    String password = "dbDesign";
 
     String findAllSql = "SELECT * FROM TABLE";
     String findByIdSql = null;
